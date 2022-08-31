@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="nav-logo">
+                <a href="">Live Tech</a>
+            </div>
+            <ul class="nav-bar">
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Learning</a></li>
+                <li><a href="">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        const hamburger = document.querySelector('.hamburger');
+
+        hamburger.addEventListener('click', function(){
+           if( document.querySelector('.nav-bar').style.display == "flex"){
+            document.querySelector('.nav-bar').style.display = "none";
+           }else{
+            document.querySelector('.nav-bar').style.display = "flex";
+            
+           }
+        });
+
+    </script>
+    
+</body>
+</html>
